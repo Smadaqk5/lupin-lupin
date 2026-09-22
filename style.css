@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* Handshake AI Design System (Rosetta Identity) */
+:root {
+  --handshake-lime: #D3FB52;
+  --handshake-lime-hover: #C2EE3B;
+  --handshake-lime-glow: rgba(211, 251, 82, 0.22);
+  --handshake-bg: #090A0E;
+  --handshake-card: #12131A;
+  --handshake-card-hover: #181924;
+  --handshake-border: #232533;
+  --handshake-border-subtle: #1C1D29;
+}
+
+@layer base {
+  body {
+    background-color: #090A0E;
+    color: #F3F4F6;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090A0E;
+}
+::-webkit-scrollbar-thumb {
+  background: #232533;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #34374A;
+}
+
+/* Handshake Accent Buttons */
+.btn-handshake-primary {
+  background-color: #D3FB52;
+  color: #090A0E;
+  font-weight: 700;
+  transition: all 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-handshake-primary:hover {
+  background-color: #C2EE3B;
+  box-shadow: 0 4px 20px -2px rgba(211, 251, 82, 0.35);
+  transform: translateY(-1px);
+}
+.btn-handshake-primary:active {
+  transform: translateY(0);
+}
+
+/* Nav Link Hover & Active */
+.nav-tab.active {
+  background-color: rgba(211, 251, 82, 0.12);
+  color: #D3FB52;
+  border: 1px solid rgba(211, 251, 82, 0.3);
+}
+
+/* Handshake Glow Utility */
+.glow-lime {
+  box-shadow: 0 0 25px -4px rgba(211, 251, 82, 0.25);
+}
+
+.glow-lime-subtle {
+  box-shadow: 0 0 15px -3px rgba(211, 251, 82, 0.15);
+}
+
+/* Code area */
+.code-editor {
+  font-family: 'JetBrains Mono', monospace;
+  tab-size: 4;
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Tabular numbers for metric displays */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

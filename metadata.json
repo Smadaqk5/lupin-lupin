@@ -1,0 +1,6 @@
+{
+  "name": "OpenTune: Student AI Training Lab",
+  "description": "A beginner-friendly platform for students to learn AI model fine-tuning with interactive coding environments, simulated GPU training runs, progress tracking, community leaderboards, and peer discussion forums.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
